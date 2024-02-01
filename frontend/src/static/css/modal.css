@@ -1,0 +1,29 @@
+.modal-overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed; /* Use fixed position for overlay */
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.modal-content {
+    background: white !important;
+    padding: 20px;
+    border-radius: 12px !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.26), 0 3px 6px rgba(0, 0, 0, 0.36);
+    /* max-width: 90%; Allow the modal to adjust to screen width */
+    overflow: auto; /* Add scrollbars if content exceeds modal height */
+    max-height: 100%; /* Allow the modal to adjust to screen height */
+}
+
+/* If you want to limit the maximum modal size, you can set max-width and max-height */
+/* .modal-content {
+    max-width: 800px; 
+    max-height: 80vh;
+} */
